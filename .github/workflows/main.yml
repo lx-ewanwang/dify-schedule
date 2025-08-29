@@ -1,0 +1,28 @@
+            - name: Dify DSL Sync
+  # You may pin to the exact commit or the version.
+  # uses: twjackysu/dify-dsl-sync-action@544a47fb1341271da5d5f43ad8b10616a17662db
+  uses: twjackysu/dify-dsl-sync-action@v1
+  with:
+    # Dify instance endpoint (without https://)
+    dify-endpoint: # default is 
+    # Email for Dify login
+    dify-email: # default is 
+    # Password for Dify login
+    dify-password: # default is 
+    # Whether to include secrets in DSL export
+    include-secrets: # optional, default is true
+    # Skip SSL certificate verification (for self-signed certificates)
+    skip-ssl-verify: # optional, default is false
+    # Prefix for production apps (will be placed in prod/ folder)
+    prod-prefix: # optional, default is PROD_
+    # Prefix for staging apps (will be placed in stg/ folder)
+    staging-prefix: # optional, default is STG_
+    # Folder name for apps without specific prefixes
+    general-folder: # optional, default is general
+    # Custom commit message template
+    commit-message: # optional, default is Update DSL files from Dify export
+    # Git user name for commits
+    git-user-name: # optional, default is github-actions[bot]
+    # Git user email for commits
+    git-user-email: # optional, default is github-actions[bot]@users.noreply.github.com
+          
